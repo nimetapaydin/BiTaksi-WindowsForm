@@ -96,6 +96,14 @@
     <Compile Include="TaksiCagir.Designer.cs">
       <DependentUpon>TaksiCagir.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaksiciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaksiciGiris.Designer.cs">
+      <DependentUpon>TaksiciGiris.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\taksi.png" />
+    <None Include="Resources\traffic.jpg" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,9 +115,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Soforolarakbasla.resx">
+      <DependentUpon>Soforolarakbasla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaksiCagir.resx">
       <DependentUpon>TaksiCagir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaksiciGiris.resx">
+      <DependentUpon>TaksiciGiris.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BiTaksi.xsc">
       <DependentUpon>BiTaksi.xsd</DependentUpon>
