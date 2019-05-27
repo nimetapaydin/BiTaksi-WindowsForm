@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiTaksi", "BiTaksi\BiTaksi.csproj", "{EEE413DC-4FA1-4968-960B-CF9194EBD03F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEE413DC-4FA1-4968-960B-CF9194EBD03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE413DC-4FA1-4968-960B-CF9194EBD03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE413DC-4FA1-4968-960B-CF9194EBD03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE413DC-4FA1-4968-960B-CF9194EBD03F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4621AE98-6D28-4752-BAE6-F54B45116746}
+	EndGlobalSection
+EndGlobal

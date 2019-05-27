@@ -1,0 +1,19 @@
+Site
+--------
+Kendini şoför olarak kaydetme ekranı
+Anasayfa (taksi çağır butonu, şoför olarak başla, taksici girişi)
+
+
+Taksici'nin Sayfası
+--------
+Taksici giriş ekranı
+Taksicini iş ekranı
+
+
+Admin
+--------
+admin giriş
+rapor
+admin onay sayfası
+araç ekleme sayfası
+aktif şöförler (işte olan şoförler)
