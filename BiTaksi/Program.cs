@@ -16,7 +16,9 @@ namespace BiTaksi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Anasayfa());
+            //Application.Run(new Anasayfa());
+            Application.Run(new TaksiciGiris());
+            //Application.Run(new Soforolarakbasla());
         }
     }
 }

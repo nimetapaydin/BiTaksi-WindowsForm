@@ -232,7 +232,16 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
               <Mapping SourceColumn="aktif" DataSetColumn="aktif" />
               <Mapping SourceColumn="onayli" DataSetColumn="onayli" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="BiTaksiConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.GetByPassword</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -242,7 +251,7 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
   <xs:element name="BiTaksi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BiTaksi" msprop:Generator_UserDSName="BiTaksi">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="admin" msprop:Generator_TableClassName="adminDataTable" msprop:Generator_TableVarName="tableadmin" msprop:Generator_TablePropName="admin" msprop:Generator_RowDeletingName="adminRowDeleting" msprop:Generator_RowChangingName="adminRowChanging" msprop:Generator_RowEvHandlerName="adminRowChangeEventHandler" msprop:Generator_RowDeletedName="adminRowDeleted" msprop:Generator_UserTableName="admin" msprop:Generator_RowChangedName="adminRowChanged" msprop:Generator_RowEvArgName="adminRowChangeEvent" msprop:Generator_RowClassName="adminRow">
+        <xs:element name="admin" msprop:Generator_TableClassName="adminDataTable" msprop:Generator_TableVarName="tableadmin" msprop:Generator_RowChangedName="adminRowChanged" msprop:Generator_TablePropName="admin" msprop:Generator_RowDeletingName="adminRowDeleting" msprop:Generator_RowChangingName="adminRowChanging" msprop:Generator_RowEvHandlerName="adminRowChangeEventHandler" msprop:Generator_RowDeletedName="adminRowDeleted" msprop:Generator_RowClassName="adminRow" msprop:Generator_UserTableName="admin" msprop:Generator_RowEvArgName="adminRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email">
@@ -262,7 +271,7 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="arac" msprop:Generator_TableClassName="aracDataTable" msprop:Generator_TableVarName="tablearac" msprop:Generator_TablePropName="arac" msprop:Generator_RowDeletingName="aracRowDeleting" msprop:Generator_RowChangingName="aracRowChanging" msprop:Generator_RowEvHandlerName="aracRowChangeEventHandler" msprop:Generator_RowDeletedName="aracRowDeleted" msprop:Generator_UserTableName="arac" msprop:Generator_RowChangedName="aracRowChanged" msprop:Generator_RowEvArgName="aracRowChangeEvent" msprop:Generator_RowClassName="aracRow">
+        <xs:element name="arac" msprop:Generator_TableClassName="aracDataTable" msprop:Generator_TableVarName="tablearac" msprop:Generator_RowChangedName="aracRowChanged" msprop:Generator_TablePropName="arac" msprop:Generator_RowDeletingName="aracRowDeleting" msprop:Generator_RowChangingName="aracRowChanging" msprop:Generator_RowEvHandlerName="aracRowChangeEventHandler" msprop:Generator_RowDeletedName="aracRowDeleted" msprop:Generator_RowClassName="aracRow" msprop:Generator_UserTableName="arac" msprop:Generator_RowEvArgName="aracRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="sofor_id" msprop:Generator_ColumnVarNameInTable="columnsofor_id" msprop:Generator_ColumnPropNameInRow="sofor_id" msprop:Generator_ColumnPropNameInTable="sofor_idColumn" msprop:Generator_UserColumnName="sofor_id" type="xs:int" minOccurs="0" />
@@ -283,7 +292,7 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="cagri" msprop:Generator_TableClassName="cagriDataTable" msprop:Generator_TableVarName="tablecagri" msprop:Generator_TablePropName="cagri" msprop:Generator_RowDeletingName="cagriRowDeleting" msprop:Generator_RowChangingName="cagriRowChanging" msprop:Generator_RowEvHandlerName="cagriRowChangeEventHandler" msprop:Generator_RowDeletedName="cagriRowDeleted" msprop:Generator_UserTableName="cagri" msprop:Generator_RowChangedName="cagriRowChanged" msprop:Generator_RowEvArgName="cagriRowChangeEvent" msprop:Generator_RowClassName="cagriRow">
+        <xs:element name="cagri" msprop:Generator_TableClassName="cagriDataTable" msprop:Generator_TableVarName="tablecagri" msprop:Generator_RowChangedName="cagriRowChanged" msprop:Generator_TablePropName="cagri" msprop:Generator_RowDeletingName="cagriRowDeleting" msprop:Generator_RowChangingName="cagriRowChanging" msprop:Generator_RowEvHandlerName="cagriRowChangeEventHandler" msprop:Generator_RowDeletedName="cagriRowDeleted" msprop:Generator_RowClassName="cagriRow" msprop:Generator_UserTableName="cagri" msprop:Generator_RowEvArgName="cagriRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="sofor_id" msprop:Generator_ColumnVarNameInTable="columnsofor_id" msprop:Generator_ColumnPropNameInRow="sofor_id" msprop:Generator_ColumnPropNameInTable="sofor_idColumn" msprop:Generator_UserColumnName="sofor_id" type="xs:int" />
@@ -318,7 +327,7 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="rapor" msprop:Generator_TableClassName="raporDataTable" msprop:Generator_TableVarName="tablerapor" msprop:Generator_TablePropName="rapor" msprop:Generator_RowDeletingName="raporRowDeleting" msprop:Generator_RowChangingName="raporRowChanging" msprop:Generator_RowEvHandlerName="raporRowChangeEventHandler" msprop:Generator_RowDeletedName="raporRowDeleted" msprop:Generator_UserTableName="rapor" msprop:Generator_RowChangedName="raporRowChanged" msprop:Generator_RowEvArgName="raporRowChangeEvent" msprop:Generator_RowClassName="raporRow">
+        <xs:element name="rapor" msprop:Generator_TableClassName="raporDataTable" msprop:Generator_TableVarName="tablerapor" msprop:Generator_RowChangedName="raporRowChanged" msprop:Generator_TablePropName="rapor" msprop:Generator_RowDeletingName="raporRowDeleting" msprop:Generator_RowChangingName="raporRowChanging" msprop:Generator_RowEvHandlerName="raporRowChangeEventHandler" msprop:Generator_RowDeletedName="raporRowDeleted" msprop:Generator_RowClassName="raporRow" msprop:Generator_UserTableName="rapor" msprop:Generator_RowEvArgName="raporRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="sofor_id" msprop:Generator_ColumnVarNameInTable="columnsofor_id" msprop:Generator_ColumnPropNameInRow="sofor_id" msprop:Generator_ColumnPropNameInTable="sofor_idColumn" msprop:Generator_UserColumnName="sofor_id" type="xs:int" />
@@ -334,7 +343,7 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="sofor" msprop:Generator_TableClassName="soforDataTable" msprop:Generator_TableVarName="tablesofor" msprop:Generator_TablePropName="sofor" msprop:Generator_RowDeletingName="soforRowDeleting" msprop:Generator_RowChangingName="soforRowChanging" msprop:Generator_RowEvHandlerName="soforRowChangeEventHandler" msprop:Generator_RowDeletedName="soforRowDeleted" msprop:Generator_UserTableName="sofor" msprop:Generator_RowChangedName="soforRowChanged" msprop:Generator_RowEvArgName="soforRowChangeEvent" msprop:Generator_RowClassName="soforRow">
+        <xs:element name="sofor" msprop:Generator_TableClassName="soforDataTable" msprop:Generator_TableVarName="tablesofor" msprop:Generator_RowChangedName="soforRowChanged" msprop:Generator_TablePropName="sofor" msprop:Generator_RowDeletingName="soforRowDeleting" msprop:Generator_RowChangingName="soforRowChanging" msprop:Generator_RowEvHandlerName="soforRowChangeEventHandler" msprop:Generator_RowDeletedName="soforRowDeleted" msprop:Generator_RowClassName="soforRow" msprop:Generator_UserTableName="sofor" msprop:Generator_RowEvArgName="soforRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />

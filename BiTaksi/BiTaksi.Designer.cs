@@ -3918,11 +3918,15 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, tc, adisoyadi, sifre, aktif, onayli FROM dbo.sofor";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "dbo.GetByPassword";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.StoredProcedure;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3944,6 +3948,30 @@ SELECT sofor_id, musteri_adisoyadi, musteri_telefon, musteri_adres, aktif FROM c
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual BiTaksi.soforDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            BiTaksi.soforDataTable dataTable = new BiTaksi.soforDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(BiTaksi.soforDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual BiTaksi.soforDataTable GetDataBy() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             BiTaksi.soforDataTable dataTable = new BiTaksi.soforDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

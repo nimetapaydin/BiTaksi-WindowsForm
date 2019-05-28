@@ -31,9 +31,9 @@
             this.skad = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.skayıtadtextbox = new System.Windows.Forms.TextBox();
-            this.skayıtctextbox = new System.Windows.Forms.TextBox();
-            this.skayıtsifretextbox = new System.Windows.Forms.TextBox();
+            this.skayitadtextbox = new System.Windows.Forms.TextBox();
+            this.skayitctextbox = new System.Windows.Forms.TextBox();
+            this.skayitsifretextbox = new System.Windows.Forms.TextBox();
             this.sKayıtEkleButton = new System.Windows.Forms.Label();
             this.skayitbaslik = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,26 +76,26 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Şifre";
             // 
-            // skayıtadtextbox
+            // skayitadtextbox
             // 
-            this.skayıtadtextbox.Location = new System.Drawing.Point(551, 255);
-            this.skayıtadtextbox.Name = "skayıtadtextbox";
-            this.skayıtadtextbox.Size = new System.Drawing.Size(213, 22);
-            this.skayıtadtextbox.TabIndex = 3;
+            this.skayitadtextbox.Location = new System.Drawing.Point(551, 255);
+            this.skayitadtextbox.Name = "skayitadtextbox";
+            this.skayitadtextbox.Size = new System.Drawing.Size(213, 22);
+            this.skayitadtextbox.TabIndex = 3;
             // 
-            // skayıtctextbox
+            // skayitctextbox
             // 
-            this.skayıtctextbox.Location = new System.Drawing.Point(551, 336);
-            this.skayıtctextbox.Name = "skayıtctextbox";
-            this.skayıtctextbox.Size = new System.Drawing.Size(213, 22);
-            this.skayıtctextbox.TabIndex = 4;
+            this.skayitctextbox.Location = new System.Drawing.Point(551, 336);
+            this.skayitctextbox.Name = "skayitctextbox";
+            this.skayitctextbox.Size = new System.Drawing.Size(213, 22);
+            this.skayitctextbox.TabIndex = 4;
             // 
-            // skayıtsifretextbox
+            // skayitsifretextbox
             // 
-            this.skayıtsifretextbox.Location = new System.Drawing.Point(551, 411);
-            this.skayıtsifretextbox.Name = "skayıtsifretextbox";
-            this.skayıtsifretextbox.Size = new System.Drawing.Size(213, 22);
-            this.skayıtsifretextbox.TabIndex = 5;
+            this.skayitsifretextbox.Location = new System.Drawing.Point(551, 411);
+            this.skayitsifretextbox.Name = "skayitsifretextbox";
+            this.skayitsifretextbox.Size = new System.Drawing.Size(213, 22);
+            this.skayitsifretextbox.TabIndex = 5;
             // 
             // sKayıtEkleButton
             // 
@@ -106,6 +106,7 @@
             this.sKayıtEkleButton.Size = new System.Drawing.Size(35, 17);
             this.sKayıtEkleButton.TabIndex = 6;
             this.sKayıtEkleButton.Text = "Ekle";
+            this.sKayıtEkleButton.Click += new System.EventHandler(this.sKayıtEkleButton_Click);
             // 
             // skayitbaslik
             // 
@@ -140,9 +141,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.skayitbaslik);
             this.Controls.Add(this.sKayıtEkleButton);
-            this.Controls.Add(this.skayıtsifretextbox);
-            this.Controls.Add(this.skayıtctextbox);
-            this.Controls.Add(this.skayıtadtextbox);
+            this.Controls.Add(this.skayitsifretextbox);
+            this.Controls.Add(this.skayitctextbox);
+            this.Controls.Add(this.skayitadtextbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.skad);
@@ -158,11 +159,11 @@
         private System.Windows.Forms.Label skad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox skayıtadtextbox;
-        private System.Windows.Forms.TextBox skayıtctextbox;
-        private System.Windows.Forms.TextBox skayıtsifretextbox;
+        private System.Windows.Forms.TextBox skayitctextbox;
+        private System.Windows.Forms.TextBox skayitsifretextbox;
         private System.Windows.Forms.Label sKayıtEkleButton;
         private System.Windows.Forms.Label skayitbaslik;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox skayitadtextbox;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.sofortc = new System.Windows.Forms.Label();
             this.sifre = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.soforsifretextbox = new System.Windows.Forms.TextBox();
             this.taksicigirisbutton = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +47,7 @@
             this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(307, 143);
+            this.label1.Location = new System.Drawing.Point(325, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 44);
             this.label1.TabIndex = 0;
@@ -92,11 +95,12 @@
             // 
             this.taksicigirisbutton.AutoSize = true;
             this.taksicigirisbutton.BackColor = System.Drawing.Color.Transparent;
-            this.taksicigirisbutton.Location = new System.Drawing.Point(397, 386);
+            this.taksicigirisbutton.Location = new System.Drawing.Point(408, 408);
             this.taksicigirisbutton.Name = "taksicigirisbutton";
             this.taksicigirisbutton.Size = new System.Drawing.Size(66, 17);
             this.taksicigirisbutton.TabIndex = 7;
             this.taksicigirisbutton.Text = "Giriş Yap";
+            this.taksicigirisbutton.Click += new System.EventHandler(this.taksicigirisbutton_Click_1);
             // 
             // label2
             // 
@@ -109,13 +113,17 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Anasayfa";
             // 
+            // adminBindingSource
+            // 
+            this.adminBindingSource.DataMember = "admin";
+            // 
             // TaksiciGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BiTaksi.Properties.Resources.taksi;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 452);
+            this.ClientSize = new System.Drawing.Size(824, 477);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.taksicigirisbutton);
             this.Controls.Add(this.soforsifretextbox);
@@ -126,6 +134,7 @@
             this.Name = "TaksiciGiris";
             this.Text = "TaksiciGiris";
             this.Load += new System.EventHandler(this.TaksiciGiris_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +149,6 @@
         private System.Windows.Forms.TextBox soforsifretextbox;
         private System.Windows.Forms.Label taksicigirisbutton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.BindingSource adminBindingSource;
     }
 }
