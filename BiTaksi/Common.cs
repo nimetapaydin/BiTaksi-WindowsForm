@@ -26,5 +26,10 @@ namespace BiTaksi
 
             return sb.ToString();
         }
+
+        public static int uniqueID()
+        {
+            return int.Parse(DateTime.Now.ToString("yyddHHmmss"));
+        }
     }
 }

@@ -13,7 +13,8 @@ namespace BiTaksi
 {
     public partial class TaksiciGiris : Form
     {
-        public BiTaksi biTaksi = new BiTaksi();
+        public BiTaksiDataSet biTaksi = new BiTaksiDataSet();
+        public BiTaksiDataSetTableAdapters.soforTableAdapter soforTableAdapter = new BiTaksiDataSetTableAdapters.soforTableAdapter();
 
         public TaksiciGiris()
         {
@@ -28,19 +29,27 @@ namespace BiTaksi
         {
             string tc = sofortctextbox.Text;
             string sifre = Common.md5HASH(soforsifretextbox.Text);
-            
-            // BiTaksi.soforRow sofor = this.biTaksi.sofor.FirstOrDefault(x => x.tc.Equals(tc) && x.sifre.Equals(sifre));
-            //var all = biTaksi.sofor.Where(x => x.tc.Equals(tc) && x.sifre.Equals(sifre)).ToList();
 
-            //if (sofor != null)
-            //{
-            //    MessageBox.Show("Giriş başarılı", sofor.adisoyadi);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Hooooooğ nabyon");
+            BiTaksiDataSet.soforRow sofor = soforTableAdapter.GetData().FirstOrDefault(x => x.tc.Equals(tc) && x.sifre.Equals(sifre));
 
-            //}
+            if (sofor != null)
+            {
+                taksiciPanel panel = new taksiciPanel();
+                panel.model = sofor;
+                panel.loadSofor();
+                panel.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Hooooooğ nabyon");
+
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Anasayfa frm = new Anasayfa();
+            frm.ShowDialog();
         }
     }
 }

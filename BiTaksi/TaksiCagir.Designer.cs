@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.taksicagireklebutton = new System.Windows.Forms.Label();
-            this.tcisim = new System.Windows.Forms.TextBox();
-            this.tctel = new System.Windows.Forms.TextBox();
-            this.tcadres = new System.Windows.Forms.TextBox();
+            this.misim = new System.Windows.Forms.TextBox();
+            this.mtel = new System.Windows.Forms.TextBox();
+            this.madres = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -86,27 +86,29 @@
             this.taksicagireklebutton.Size = new System.Drawing.Size(35, 17);
             this.taksicagireklebutton.TabIndex = 3;
             this.taksicagireklebutton.Text = "Ekle";
+            this.taksicagireklebutton.Click += new System.EventHandler(this.taksicagireklebutton_Click);
             // 
-            // tcisim
+            // misim
             // 
-            this.tcisim.Location = new System.Drawing.Point(411, 200);
-            this.tcisim.Name = "tcisim";
-            this.tcisim.Size = new System.Drawing.Size(157, 22);
-            this.tcisim.TabIndex = 4;
+            this.misim.Location = new System.Drawing.Point(411, 200);
+            this.misim.Name = "misim";
+            this.misim.Size = new System.Drawing.Size(202, 22);
+            this.misim.TabIndex = 4;
             // 
-            // tctel
+            // mtel
             // 
-            this.tctel.Location = new System.Drawing.Point(411, 264);
-            this.tctel.Name = "tctel";
-            this.tctel.Size = new System.Drawing.Size(157, 22);
-            this.tctel.TabIndex = 5;
+            this.mtel.Location = new System.Drawing.Point(411, 264);
+            this.mtel.Name = "mtel";
+            this.mtel.Size = new System.Drawing.Size(202, 22);
+            this.mtel.TabIndex = 5;
             // 
-            // tcadres
+            // madres
             // 
-            this.tcadres.Location = new System.Drawing.Point(411, 323);
-            this.tcadres.Name = "tcadres";
-            this.tcadres.Size = new System.Drawing.Size(157, 22);
-            this.tcadres.TabIndex = 6;
+            this.madres.Location = new System.Drawing.Point(411, 323);
+            this.madres.Multiline = true;
+            this.madres.Name = "madres";
+            this.madres.Size = new System.Drawing.Size(202, 87);
+            this.madres.TabIndex = 6;
             // 
             // label3
             // 
@@ -127,9 +129,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(842, 514);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tcadres);
-            this.Controls.Add(this.tctel);
-            this.Controls.Add(this.tcisim);
+            this.Controls.Add(this.madres);
+            this.Controls.Add(this.mtel);
+            this.Controls.Add(this.misim);
             this.Controls.Add(this.taksicagireklebutton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -147,9 +149,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label taksicagireklebutton;
-        private System.Windows.Forms.TextBox tcisim;
-        private System.Windows.Forms.TextBox tctel;
-        private System.Windows.Forms.TextBox tcadres;
+        private System.Windows.Forms.TextBox misim;
+        private System.Windows.Forms.TextBox mtel;
+        private System.Windows.Forms.TextBox madres;
         private System.Windows.Forms.Label label3;
     }
 }

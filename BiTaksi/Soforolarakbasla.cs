@@ -12,8 +12,8 @@ namespace BiTaksi
 {
     public partial class Soforolarakbasla : Form
     {
-        public BiTaksi biTaksi = new BiTaksi();
-        BiTaksiTableAdapters.soforTableAdapter soforTableAdapter = new BiTaksiTableAdapters.soforTableAdapter();
+        public BiTaksiDataSet biTaksi = new BiTaksiDataSet();
+        BiTaksiDataSetTableAdapters.soforTableAdapter soforTableAdapter = new BiTaksiDataSetTableAdapters.soforTableAdapter();
 
         public Soforolarakbasla()
         {
@@ -26,7 +26,8 @@ namespace BiTaksi
             string tc = skayitctextbox.Text;
             string sifre = skayitsifretextbox.Text;
 
-            BiTaksi.soforRow sofor = biTaksi.sofor.NewsoforRow();
+            BiTaksiDataSet.soforRow sofor = biTaksi.sofor.NewsoforRow();
+            sofor.id = Common.uniqueID();
             sofor.adisoyadi = adisoyadi;
             sofor.tc= tc;
             sofor.sifre = Common.md5HASH(sifre);

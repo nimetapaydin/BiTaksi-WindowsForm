@@ -61,19 +61,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="BiTaksi.cs">
-      <DependentUpon>BiTaksi.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BiTaksi.Designer.cs">
+    <Compile Include="BiTaksiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BiTaksi.xsd</DependentUpon>
+      <DependentUpon>BiTaksiDataSet.xsd</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Common.cs" />
@@ -97,8 +100,34 @@
     <Compile Include="TaksiciGiris.Designer.cs">
       <DependentUpon>TaksiciGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="taksiciPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taksiciPanel.Designer.cs">
+      <DependentUpon>taksiciPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="taksiciPanel.resx">
+      <DependentUpon>taksiciPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BiTaksiDataSet.xsc">
+      <DependentUpon>BiTaksiDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="BiTaksiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BiTaksiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="BiTaksiDataSet.xss">
+      <DependentUpon>BiTaksiDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\taksi.png" />
     <None Include="Resources\traffic.jpg" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,20 +150,6 @@
     <EmbeddedResource Include="TaksiciGiris.resx">
       <DependentUpon>TaksiciGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BiTaksi.xsc">
-      <DependentUpon>BiTaksi.xsd</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="BiTaksi.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BiTaksi.Designer.cs</LastGenOutput>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="BiTaksi.xss">
-      <DependentUpon>BiTaksi.xsd</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,10 +165,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BiTaksi.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="BiTaksi_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>BiTaksi.mdf</DependentUpon>
     </Content>
   </ItemGroup>

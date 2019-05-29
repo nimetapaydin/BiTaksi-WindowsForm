@@ -19,7 +19,26 @@ namespace BiTaksi
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            TaksiCagir frm = new TaksiCagir();
+            frm.ShowDialog();
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Soforolarakbasla frm = new Soforolarakbasla();
+            frm.ShowDialog();
+        }
+
+        private void soforüyegirisi_Click(object sender, EventArgs e)
+        {
+            TaksiciGiris frm = new TaksiciGiris();
+            frm.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Admin frm = new Admin();
+            frm.ShowDialog();
         }
     }
 }

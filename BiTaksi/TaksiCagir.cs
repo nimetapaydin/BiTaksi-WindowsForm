@@ -16,5 +16,14 @@ namespace BiTaksi
         {
             InitializeComponent();
         }
+
+        private void taksicagireklebutton_Click(object sender, EventArgs e)
+        {
+            string mAd = misim.Text;
+            string mTel = mtel.Text;
+            string mAdres = madres.Text;
+
+
+        }
     }
 }

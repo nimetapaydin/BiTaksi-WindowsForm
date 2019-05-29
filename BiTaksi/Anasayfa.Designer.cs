@@ -48,6 +48,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -71,6 +72,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // soforüyegirisi
             // 
@@ -83,6 +85,7 @@
             this.soforüyegirisi.Size = new System.Drawing.Size(229, 32);
             this.soforüyegirisi.TabIndex = 3;
             this.soforüyegirisi.Text = "Şoför Üye Girişi";
+            this.soforüyegirisi.Click += new System.EventHandler(this.soforüyegirisi_Click);
             // 
             // Anasayfa
             // 
