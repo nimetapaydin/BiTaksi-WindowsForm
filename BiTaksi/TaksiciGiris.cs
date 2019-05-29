@@ -42,7 +42,6 @@ namespace BiTaksi
             else
             {
                 MessageBox.Show("Hooooooğ nabyon");
-
             }
         }
 
