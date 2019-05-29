@@ -36,17 +36,17 @@ namespace BiTaksi
             string mTel = mtel.Text;
             string mAdres = madres.Text;
 
-            BiTaksiDataSet.aracRow bostaArac = aracTableAdapter.GetData().FirstOrDefault(x => x.sofor_id == -1);
+            BiTaksiDataSet.aracRow bostaArac = aracTableAdapter.GetData().FirstOrDefault(x => x.Issofor_idNull());
             BiTaksiDataSet.soforRow rastgeleSofor = soforTableAdapter.GetData().FirstOrDefault(x => x.aktif.Equals("0") && x.onayli.Equals("1"));
-            if (bostaArac != null)
+            if (bostaArac == null)
             {
-                List<BiTaksiDataSet.aracRow> aracRows = aracTableAdapter.GetData().Where(x => x.sofor_id != null).ToList();
-                rastgeleSofor = soforTableAdapter.GetData().FirstOrDefault(x => x.aktif.Equals("0") && x.onayli.Equals("1") && aracRows.FindIndex(y => y.sofor_id == x.id) != -1);
+                List<BiTaksiDataSet.aracRow> aracRows = aracTableAdapter.GetData().Where(x => !x.Issofor_idNull()).ToList();
+                rastgeleSofor = soforTableAdapter.GetData().FirstOrDefault(x => x.aktif.Equals("0") && x.onayli.Equals("1") && aracRows.FindIndex(y => !y.Issofor_idNull() && y.sofor_id == x.id) != -1);
             }
 
             if (rastgeleSofor != null)
             {
-                BiTaksiDataSet.aracRow araba = aracTableAdapter.GetData().FirstOrDefault(x => x.sofor_id == rastgeleSofor.id);
+                BiTaksiDataSet.aracRow araba = aracTableAdapter.GetData().FirstOrDefault(x => !x.Issofor_idNull() && x.sofor_id == rastgeleSofor.id);
 
                 if (araba != null)
                 {
@@ -83,7 +83,7 @@ namespace BiTaksi
                 }
                 else
                 {
-                    araba = aracTableAdapter.GetData().FirstOrDefault(x => x.sofor_id == null);
+                    araba = aracTableAdapter.GetData().FirstOrDefault(x => x.Issofor_idNull());
 
                     if (araba == null)
                     {
