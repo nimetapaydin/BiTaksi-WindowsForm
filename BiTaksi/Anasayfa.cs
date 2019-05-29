@@ -35,7 +35,8 @@ namespace BiTaksi
             frm.ShowDialog();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void adminButton_Click(object sender, EventArgs e)
         {
             Admin frm = new Admin();
             frm.ShowDialog();

@@ -33,6 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.soforüyegirisi = new System.Windows.Forms.Label();
+            this.adminButton = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -48,7 +49,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+           
             // 
             // pictureBox2
             // 
@@ -87,6 +88,18 @@
             this.soforüyegirisi.Text = "Şoför Üye Girişi";
             this.soforüyegirisi.Click += new System.EventHandler(this.soforüyegirisi_Click);
             // 
+            // adminButton
+            // 
+            this.adminButton.AutoSize = true;
+            this.adminButton.BackColor = System.Drawing.Color.Transparent;
+            this.adminButton.ForeColor = System.Drawing.Color.White;
+            this.adminButton.Location = new System.Drawing.Point(64, 112);
+            this.adminButton.Name = "adminButton";
+            this.adminButton.Size = new System.Drawing.Size(47, 17);
+            this.adminButton.TabIndex = 4;
+            this.adminButton.Text = "Admin";
+            this.adminButton.Click += new System.EventHandler(this.adminButton_Click);
+            // 
             // Anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -94,6 +107,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1326, 775);
+            this.Controls.Add(this.adminButton);
             this.Controls.Add(this.soforüyegirisi);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -114,6 +128,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label soforüyegirisi;
+        private System.Windows.Forms.Label adminButton;
     }
 }
 

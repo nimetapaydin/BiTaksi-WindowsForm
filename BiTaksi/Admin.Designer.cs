@@ -28,78 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.aracEkle = new System.Windows.Forms.Label();
             this.soförleriGörüntüle = new System.Windows.Forms.Label();
             this.raporlariGörüntüle = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(399, 322);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
             // 
             // aracEkle
             // 
             this.aracEkle.AutoSize = true;
-            this.aracEkle.BackColor = System.Drawing.Color.Transparent;
+            this.aracEkle.BackColor = System.Drawing.Color.RosyBrown;
+            this.aracEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.aracEkle.ForeColor = System.Drawing.Color.Transparent;
-            this.aracEkle.Location = new System.Drawing.Point(340, 177);
+            this.aracEkle.Location = new System.Drawing.Point(264, 96);
             this.aracEkle.Name = "aracEkle";
-            this.aracEkle.Size = new System.Drawing.Size(68, 17);
+            this.aracEkle.Size = new System.Drawing.Size(96, 25);
             this.aracEkle.TabIndex = 1;
             this.aracEkle.Text = "Araç Ekle";
+            this.aracEkle.Click += new System.EventHandler(this.aracEkle_Click);
             // 
             // soförleriGörüntüle
             // 
             this.soförleriGörüntüle.AutoSize = true;
-            this.soförleriGörüntüle.BackColor = System.Drawing.Color.Transparent;
+            this.soförleriGörüntüle.BackColor = System.Drawing.Color.RosyBrown;
+            this.soförleriGörüntüle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.soförleriGörüntüle.ForeColor = System.Drawing.Color.White;
-            this.soförleriGörüntüle.Location = new System.Drawing.Point(451, 177);
+            this.soförleriGörüntüle.Location = new System.Drawing.Point(418, 96);
             this.soförleriGörüntüle.Name = "soförleriGörüntüle";
-            this.soförleriGörüntüle.Size = new System.Drawing.Size(128, 17);
+            this.soförleriGörüntüle.Size = new System.Drawing.Size(174, 25);
             this.soförleriGörüntüle.TabIndex = 2;
             this.soförleriGörüntüle.Text = "Şoförleri Görüntüle";
+            this.soförleriGörüntüle.Click += new System.EventHandler(this.soförleriGörüntüle_Click);
             // 
             // raporlariGörüntüle
             // 
             this.raporlariGörüntüle.AutoSize = true;
-            this.raporlariGörüntüle.BackColor = System.Drawing.Color.Transparent;
+            this.raporlariGörüntüle.BackColor = System.Drawing.Color.RosyBrown;
+            this.raporlariGörüntüle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.raporlariGörüntüle.ForeColor = System.Drawing.Color.White;
-            this.raporlariGörüntüle.Location = new System.Drawing.Point(615, 177);
+            this.raporlariGörüntüle.Location = new System.Drawing.Point(628, 96);
             this.raporlariGörüntüle.Name = "raporlariGörüntüle";
-            this.raporlariGörüntüle.Size = new System.Drawing.Size(133, 17);
+            this.raporlariGörüntüle.Size = new System.Drawing.Size(179, 25);
             this.raporlariGörüntüle.TabIndex = 3;
             this.raporlariGörüntüle.Text = "Raporları Görüntüle";
+            this.raporlariGörüntüle.Click += new System.EventHandler(this.raporlariGörüntüle_Click);
             // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BiTaksi.Properties.Resources.taksi;
+            this.BackgroundImage = global::BiTaksi.Properties.Resources.traffic;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1009, 591);
             this.Controls.Add(this.raporlariGörüntüle);
             this.Controls.Add(this.soförleriGörüntüle);
             this.Controls.Add(this.aracEkle);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "Admin";
             this.Text = "Admin";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label aracEkle;
         private System.Windows.Forms.Label soförleriGörüntüle;
         private System.Windows.Forms.Label raporlariGörüntüle;

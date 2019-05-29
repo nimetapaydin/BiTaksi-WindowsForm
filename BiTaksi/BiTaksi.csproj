@@ -73,6 +73,12 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="AracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracEkle.Designer.cs">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="BiTaksiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,11 +88,23 @@
     <Compile Include="Common.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaporlarıGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarıGörüntüle.Designer.cs">
+      <DependentUpon>RaporlarıGörüntüle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Soforolarakbasla.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Soforolarakbasla.Designer.cs">
       <DependentUpon>Soforolarakbasla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoförleriGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoförleriGörüntüle.Designer.cs">
+      <DependentUpon>SoförleriGörüntüle.cs</DependentUpon>
     </Compile>
     <Compile Include="TaksiCagir.cs">
       <SubType>Form</SubType>
@@ -106,6 +124,15 @@
     <Compile Include="taksiciPanel.Designer.cs">
       <DependentUpon>taksiciPanel.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AracEkle.resx">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarıGörüntüle.resx">
+      <DependentUpon>RaporlarıGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoförleriGörüntüle.resx">
+      <DependentUpon>SoförleriGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="taksiciPanel.resx">
       <DependentUpon>taksiciPanel.cs</DependentUpon>
     </EmbeddedResource>
