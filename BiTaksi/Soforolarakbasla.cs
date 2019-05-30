@@ -26,7 +26,14 @@ namespace BiTaksi
             string tc = skayitctextbox.Text;
             string sifre = skayitsifretextbox.Text;
 
-            BiTaksiDataSet.soforRow sofor = biTaksi.sofor.NewsoforRow();
+            BiTaksiDataSet.soforRow sofor = soforTableAdapter.GetData().FirstOrDefault(x => x.tc.Equals(tc));
+            if (sofor != null)
+            {
+                MessageBox.Show("Bu TC'ye ait şoför bulunmakta");
+                return;
+            }
+
+            sofor = biTaksi.sofor.NewsoforRow();
             sofor.id = Common.uniqueID();
             sofor.adisoyadi = adisoyadi;
             sofor.tc= tc;
