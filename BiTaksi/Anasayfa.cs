@@ -38,7 +38,7 @@ namespace BiTaksi
 
         private void adminButton_Click(object sender, EventArgs e)
         {
-            Admin frm = new Admin();
+            AdminGiris frm = new AdminGiris();
             frm.ShowDialog();
         }
     }
