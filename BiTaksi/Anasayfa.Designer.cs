@@ -49,13 +49,12 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-           
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(744, 614);
+            this.pictureBox2.Location = new System.Drawing.Point(673, 544);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(152, 65);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -67,7 +66,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1081, 614);
+            this.pictureBox3.Location = new System.Drawing.Point(911, 544);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(183, 65);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -81,7 +80,7 @@
             this.soforüyegirisi.BackColor = System.Drawing.Color.Transparent;
             this.soforüyegirisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.soforüyegirisi.ForeColor = System.Drawing.Color.White;
-            this.soforüyegirisi.Location = new System.Drawing.Point(1085, 31);
+            this.soforüyegirisi.Location = new System.Drawing.Point(905, 30);
             this.soforüyegirisi.Name = "soforüyegirisi";
             this.soforüyegirisi.Size = new System.Drawing.Size(229, 32);
             this.soforüyegirisi.TabIndex = 3;
@@ -106,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1326, 775);
+            this.ClientSize = new System.Drawing.Size(1155, 667);
             this.Controls.Add(this.adminButton);
             this.Controls.Add(this.soforüyegirisi);
             this.Controls.Add(this.pictureBox3);

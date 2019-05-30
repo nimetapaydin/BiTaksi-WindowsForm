@@ -61,9 +61,11 @@
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.adminTableAdapter = null;
             this.tableAdapterManager.aracTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.cagriTableAdapter = null;
+            this.tableAdapterManager.raporTableAdapter = null;
             this.tableAdapterManager.soforTableAdapter = this.soforTableAdapter;
             this.tableAdapterManager.UpdateOrder = BiTaksi.BiTaksiDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
@@ -79,10 +81,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.soforDataGridView.DataSource = this.soforBindingSource;
-            this.soforDataGridView.Location = new System.Drawing.Point(85, 31);
+            this.soforDataGridView.Location = new System.Drawing.Point(89, 141);
             this.soforDataGridView.Name = "soforDataGridView";
             this.soforDataGridView.RowTemplate.Height = 24;
-            this.soforDataGridView.Size = new System.Drawing.Size(634, 306);
+            this.soforDataGridView.Size = new System.Drawing.Size(634, 81);
             this.soforDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1

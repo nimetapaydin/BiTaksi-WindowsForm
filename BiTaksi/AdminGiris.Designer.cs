@@ -38,6 +38,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(357, 246);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 17);
@@ -47,6 +49,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(357, 304);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);

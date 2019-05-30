@@ -90,10 +90,10 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.raporDataGridView.DataSource = this.raporBindingSource;
-            this.raporDataGridView.Location = new System.Drawing.Point(44, 120);
+            this.raporDataGridView.Location = new System.Drawing.Point(86, 101);
             this.raporDataGridView.Name = "raporDataGridView";
             this.raporDataGridView.RowTemplate.Height = 24;
-            this.raporDataGridView.Size = new System.Drawing.Size(751, 299);
+            this.raporDataGridView.Size = new System.Drawing.Size(428, 74);
             this.raporDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1

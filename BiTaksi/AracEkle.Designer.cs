@@ -38,6 +38,8 @@
             // aracplakalabel
             // 
             this.aracplakalabel.AutoSize = true;
+            this.aracplakalabel.BackColor = System.Drawing.Color.Transparent;
+            this.aracplakalabel.ForeColor = System.Drawing.Color.White;
             this.aracplakalabel.Location = new System.Drawing.Point(279, 201);
             this.aracplakalabel.Name = "aracplakalabel";
             this.aracplakalabel.Size = new System.Drawing.Size(99, 17);
@@ -47,6 +49,8 @@
             // aracinmodelilabel
             // 
             this.aracinmodelilabel.AutoSize = true;
+            this.aracinmodelilabel.BackColor = System.Drawing.Color.Transparent;
+            this.aracinmodelilabel.ForeColor = System.Drawing.Color.White;
             this.aracinmodelilabel.Location = new System.Drawing.Point(279, 269);
             this.aracinmodelilabel.Name = "aracinmodelilabel";
             this.aracinmodelilabel.Size = new System.Drawing.Size(96, 17);
