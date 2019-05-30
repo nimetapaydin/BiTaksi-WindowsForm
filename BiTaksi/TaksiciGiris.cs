@@ -41,7 +41,7 @@ namespace BiTaksi
             }
             else
             {
-                MessageBox.Show("Hooooooğ nabyon");
+                MessageBox.Show("Giriş Başarısız");
             }
         }
 

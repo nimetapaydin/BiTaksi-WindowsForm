@@ -76,6 +76,7 @@
             this.Eklearac.Size = new System.Drawing.Size(35, 17);
             this.Eklearac.TabIndex = 4;
             this.Eklearac.Text = "Ekle";
+            this.Eklearac.Click += new System.EventHandler(this.Eklearac_Click);
             // 
             // AracEkle
             // 
