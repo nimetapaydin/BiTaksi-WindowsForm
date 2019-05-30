@@ -34,7 +34,7 @@ namespace BiTaksi
 
             cagri = cagriTableAdapter.GetData().FindBysofor_id(soforId);
 
-            if (cagri != null && cagri.aktif.Equals("1"))
+            if (cagri != null && !cagri.IsaktifNull() && cagri.aktif.Equals("1"))
             {
                 tpmad.Text = cagri.musteri_adisoyadi;
                 tpmadres.Text = cagri.musteri_adres;

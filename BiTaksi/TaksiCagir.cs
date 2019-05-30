@@ -62,6 +62,7 @@ namespace BiTaksi
                             musteri.musteri_adisoyadi = mAd;
                             musteri.musteri_adres = mAdres;
                             musteri.musteri_telefon = mTel;
+                            musteri.aktif = "1";
 
                             cagriTableAdapter.Update(musteri);
                         }
@@ -72,6 +73,7 @@ namespace BiTaksi
                             musteri.musteri_adisoyadi = mAd;
                             musteri.musteri_adres = mAdres;
                             musteri.musteri_telefon = mTel;
+                            musteri.aktif = "1";
                         }
 
                         MessageBox.Show("Araç Yola Çıkmıştır");
@@ -106,6 +108,7 @@ namespace BiTaksi
                             musteri.musteri_adisoyadi = mAd;
                             musteri.musteri_adres = mAdres;
                             musteri.musteri_telefon = mTel;
+                            musteri.aktif = "1";
 
                             cagriTableAdapter.Update(musteri);
                         }
@@ -116,6 +119,7 @@ namespace BiTaksi
                             musteri.musteri_adisoyadi = mAd;
                             musteri.musteri_adres = mAdres;
                             musteri.musteri_telefon = mTel;
+                            musteri.aktif = "1";
 
                             biTaksi.cagri.AddcagriRow(musteri);
                             cagriTableAdapter.Update(musteri);
